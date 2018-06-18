@@ -27,9 +27,9 @@
           </div>
 
           <div class="navbar-end" style="overflow: visible;">
-            @if (!Auth::guest())
-              <a href="#" class="navbar-item is-tab">Login</a>
-              <a href="#" class="navbar-item is-tab">Join the Community</a>
+            @if (Auth::guest())
+              <a href="{{route('login')}}" class="navbar-item is-tab">Login</a>
+              <a href="{{route('register')}}" class="navbar-item is-tab">Join the Community</a>
             @else
               <div href="#" class="dropdown is-aligned-right navbar-item is-tab" id="rightMenu">
                 Hello <span class="icon"><i class="fa fa-caret-down"></i></span>
