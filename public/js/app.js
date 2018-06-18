@@ -984,6 +984,17 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+var app = new Vue({
+  el: '#app',
+  data: {}
+});
+
+$(document).ready(function () {
+  $('#rightMenu').on('click', function () {
+    $(this).toggleClass('is-open');
+  });
+});
+
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
